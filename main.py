@@ -5,8 +5,16 @@ See assignment-01.pdf for details.
 # no imports needed.
 
 def foo(x):
-    ### TODO
-    pass
+    
+    if x <= 1:
+        #Base Case
+        return x
+    
+    else:
+        #Recursive Case
+        ra = foo(x - 1)
+        rb = foo(x - 2)
+        return ra + rb
 
 def longest_run(mylist, key):
     ### TODO
